@@ -1,63 +1,61 @@
-.Background{
-    background-color: #000000;
-    font-family: 'VT323', monospace;
-    color: #00FF00;
+.Background {
+  background-color: #000000;
+  font-family: 'VT323', monospace;
+  color: #00FF00;
 }
 
 .TituloMatérias {
-    font-family: 'VT323', monospace;
-    color: #00FF00;
-font-size: 3.5em;
-text-align: center;
-
+  font-family: 'VT323', monospace;
+  color: #00FF00;
+  font-size: 3.5em;
+  text-align: center;
 }
 
-.Links{
-    font-family: 'VT323', monospace;
-    color: #00FF00;
+.Links {
+  font-family: 'VT323', monospace;
+  color: #00FF00;
 }
 
-.Links:hover{
-    color: black;
-    font-size: 3rem;
+.Links:hover {
+  color: black;
+  font-size: 3rem;
 }
 
 .back-button {
-    font-family: 'VT323', monospace;
-    color: #00FF00;
-    position: absolute;
-    top: 2%;
-    left: 5%;
-    transform: translateX(-50%);
-    z-index: 1;
-    background-color: transparent;
-    color: #00FF00;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: 2px solid #00FF00;
-  }
-  
-  .back-button:hover {
-    background-color: #00FF00;
-    color: #000000;
-  }
-  
-  .TextoMatérias {
-    position: absolute;
-    top: 14%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-family: 'VT323', monospace;
-    color: #00FF00;
-    font-size: 1.4em;
-    border: 2px solid #00FF00;
-    padding: 5px;
-  }
-  
+  font-family: 'VT323', monospace;
+  color: #00FF00;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: transparent;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid #00FF00;
+}
+
+.back-button:hover {
+  background-color: #00FF00;
+  color: #000000;
+}
+
+.TextoMatérias {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: 'VT323', monospace;
+  color: #00FF00;
+  font-size: 1.4em;
+  border: 2px solid #00FF00;
+  padding: 5px;
+}
+
 .project-card {
   margin: auto;
   width: 100%;
@@ -78,11 +76,7 @@ text-align: center;
   display: block;
   margin: auto;
   text-align: center;
-  
-  
 }
-
-
 
 .text-container {
   padding: 10px;
@@ -92,13 +86,76 @@ text-align: center;
   margin: 0;
 }
 
+/* Estilo para os botões */
 .button {
-  position: absolute;
-  top: 100%;
-  right: 10px;
-  padding: 5px 10px;
-  background-color: #4CAF50;
-  color: white;
+  font-family: 'VT323', monospace;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: #00FF00;
+  border: 2px solid #00FF00;
   text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #00FF00;
+  color: #000000;
+}
+
+/* Estilo para os botões do trimestre */
+.trimester-button {
+  font-family: 'VT323', monospace;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: transparent;
+  color: #00FF00;
+  border: 2px solid #00FF00;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.trimester-button:hover {
+  background-color: #00FF00;
+  color: #000000;
+}
+
+.project-card iframe {
+  width: 100%;
+  height: 56.25vw; /* proporção 16:9 */
+  max-height: 450px;
+  border: 1px solid #00FF00;
+}
+
+.trimester-container {
+  display: none; /* Esconder os trimestres por padrão */
+}
+
+.active {
+  display: block; /* Mostrar o trimestre ativo */
+}
+
+.trimester-buttons {
+  margin-bottom: 20px;
+}
+
+.trimester-buttons button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.PPE {
+  font-size: 5vh; 
+  text-align: center;
 }

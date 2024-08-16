@@ -1,62 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Portfolio-2024/Matérias/Matérias.css">
     <title>Matemática</title>
+    <style>
+        /* Adicione estilos básicos para os botões e trimestre-container */
+        .trimester-container {
+            display: none; /* Inicialmente esconde todos os trimestres */
+        }
+
+        .trimester-container.active {
+            display: block; /* Mostra o trimestre ativo */
+        }
+        
+        .trimester-buttons {
+            margin-bottom: 20px;
+        }
+
+        .trimester-button {
+            margin-right: 10px;
+        }
+    </style>
 </head>
+
 <body class="Background">
-  <a href="javascript:history.back()" class="back-button">Voltar</a>
+    <a href="javascript:history.back()" class="back-button">Voltar</a>
     <h1 class="TituloMatérias">Matemática</h1>
     <h2 class="TextoMatérias">Meus trabalhos de matemática feitos durante o ano!</h2>
+    <div class="trimester-buttons">
+        <button class="trimester-button" onclick="showTrimester(1)">1º Trimestre</button>
+        <button class="trimester-button" onclick="showTrimester(2)">2º Trimestre</button>
+    </div>
 
-    <!-- 1st Trimester -->
-    <h2 class="trimester-title">1º Trimestre</h2>
-    <div class="trimester-container">
+    <!-- 1º Trimestre -->
+    <div id="trimester1" class="trimester-container">
+        <h2 class="trimester-title">1º Trimestre</h2>
         <div class="project-card">
-            <h2 class="title">Vídeo dos angulos</h2>
-            <video autoplay="false" class="project-image" src="/Portfolio-2024/Matérias/Matérias/Atividades/Filme Mágico.MOV"></video>
+            <h2 class="title">Vídeo dos ângulos</h2>
+            <video controls class="project-image" src="/Portfolio-2024/Matérias/Atividades/Filme Mágico.MOV"></video>
             <div class="text-container">
-              <p class="project-text">
-              Nas aulas tivemos que criar um roteiro e gravar cenas para um vídeo<br><br>Habilidades: C2 - H11<br><br>Assunto: Essa atividade começou com uma introdução a angulos, para entender o conteúdo e conseguisemos criar o roteiro e gravar os vídeos.<br><br>Critica: Essa atividade foi uma das que mais gostei de fazer, criar o roteiro e atuar nas cenas foi legal porque eu não costumo ter atividades assim, então gostei muito, video dignino de OSCAR.</p>
-              <a class="button" href="https://www.youtube.com/watch?v=nNjne-Ufn-c">Trabalho</a>
+                <p class="project-text">
+                    Nas aulas tivemos que criar um roteiro e gravar cenas para um vídeo.<br><br>Habilidades: C2 - H11<br><br>Assunto: Essa atividade começou com uma introdução a ângulos, para entender o conteúdo e conseguirmos criar o roteiro e gravar os vídeos.<br><br>Crítica: Essa atividade foi uma das que mais gostei de fazer, criar o roteiro e atuar nas cenas foi legal porque eu não costumo ter atividades assim, então gostei muito, vídeo digno de OSCAR.
+                </p>
+                <a class="button" href="https://www.youtube.com/watch?v=nNjne-Ufn-c">Trabalho</a>
             </div>
         </div>
-        <!-- Add more projects for the 1st trimester here -->
     </div>
 
-    <!-- 2nd Trimester -->
-    <h2 class="trimester-title">2º Trimestre</h2>
-    <div class="trimester-container">
-      <div class="project-card">
-        <h2 class="title">Filme quebrando a banca</h2>
-        <embed class="project-image" src="/Portfolio-2024/Matérias/Matérias/Atividades/Atividade Quebrando a banca.pdf">
-        <div class="text-container">
-          <p class="project-text">
-         Na aula assistimos um filme no auditório do jogo 21<br><br>Habilidades: C5 - H31 H32<br><br>Assunto: Na atividade tivemos que analisar alguns conceitos matemáticos aplicados no filme.<br><br>Critica: Achei bastante interesante o filme e os conceitos matemáticos apresentados.</p>
-          <a class="button" href="https://docs.google.com/document/d/1FCi0djhcr6CvnRGuyZGZN8BgkiT1XWyBLSmeHjInfWg/edit?usp=sharing">Trabalho</a>
+    <!-- 2º Trimestre -->
+    <div id="trimester2" class="trimester-container">
+        <h2 class="trimester-title">2º Trimestre</h2>
+        <div class="project-card">
+            <h2 class="title">Filme Quebrando a Banca</h2>
+            <embed class="project-image" src="/Portfolio-2024/Matérias/Matérias/Atividades/Atividade Quebrando a banca.pdf">
+            <div class="text-container">
+                <p class="project-text">
+                    Na aula assistimos um filme no auditório sobre o jogo 21.<br><br>Habilidades: C5 - H31 H32<br><br>Assunto: Na atividade tivemos que analisar alguns conceitos matemáticos aplicados no filme.<br><br>Crítica: Achei bastante interessante o filme e os conceitos matemáticos apresentados.
+                </p>
+                <a class="button" href="https://docs.google.com/document/d/1FCi0djhcr6CvnRGuyZGZN8BgkiT1XWyBLSmeHjInfWg/edit?usp=sharing">Trabalho</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h2 class="title">Banco do G</h2>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 100%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGKMSe26pA/JAqMsmD2XyIG4YIRcSdFyw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+            </div>
+            <div class="text-container">
+                <p class="project-text">
+                    Tivemos que criar um banco imobiliário de Florianópolis.<br><br>Habilidades: C5 - H30, H31, H32<br><br>Assunto: Na atividade nós formamos grupos para recriar o famoso jogo Banco Imobiliário em uma versão de Florianópolis, recriando todos os elementos do jogo pensando na ilha.<br><br>Crítica: Essa foi uma das atividades mais legais de fazer, gostei bastante!
+                </p>
+                <a class="button" href="https://www.canva.com/design/DAGKMSe26pA/JAqMsmD2XyIG4YIRcSdFyw/view?utm_content=DAGKMSe26pA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link">Trabalho</a>
+            </div>
         </div>
     </div>
 
-    <div class="trimester-container">
-      <div class="project-card">
-        <h2 class="title">Banco do G</h2>
-        <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
-        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-        border-radius: 8px; will-change: transform;">
-         <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-           src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKMSe26pA&#x2F;JAqMsmD2XyIG4YIRcSdFyw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-         </iframe>
-       </div>
-        <div class="text-container">
-          <p class="project-text">
-        Tivemos que criar um banco imobiliário de Florianópolis<br><br>Habilidades: C5 - H30, H31, H32<br><br>Assunto: Na atividade nós formamos grupos para recriar o famoso jogo banco imobiliário em uma versão de Florianópolis, recriando todos os elementos do jogo pensando na ilha.<br><br>Critica: Essa foi uma das atividades mais legais de fazer, gostei bastante!</p>
-          <a class="button" href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGKMSe26pA&#x2F;JAqMsmD2XyIG4YIRcSdFyw&#x2F;view?utm_content=DAGKMSe26pA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link">Trabalho</a>
-        </div>
-    </div>
-    </div>
+    <script>
+        function showTrimester(trimester) {
+            // Esconde todos os trimestres
+            var trimesters = document.getElementsByClassName('trimester-container');
+            for (var i = 0; i < trimesters.length; i++) {
+                trimesters[i].style.display = 'none';
+            }
 
+            // Mostra o trimestre selecionado
+            document.getElementById('trimester' + trimester).style.display = 'block';
+        }
+
+        // Mostra o primeiro trimestre por padrão
+        showTrimester(1);
+    </script>
 </body>
+
 </html>
